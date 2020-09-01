@@ -1,0 +1,31 @@
+mvn install:install-file -Dfile=client-dao.jar -DgroupId=it.ader.classificazionedocumenti -DartifactId=client-dao -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar
+
+mvn install:install-file -Dfile=ader-release-2.0.2.1.jar -DgroupId=it.aer.bup.classifier -DartifactId=ader-rep-release -Dversion=2.0.2.1 -Dpackaging=jar
+
+mvn install:install-file -Dfile=ader-release-2.0.4.jar -DgroupId=it.aer.bup.classifier -DartifactId=ader-rep-release -Dversion=2.0.4 -Dpackaging=jar
+
+mvn install:install-file -Dfile=Lib.jar -DgroupId=it.ader.classificazionedocumenti -DartifactId=Lib -Dversion=1.0.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar
+
+mvn install:install-file -Dfile=spjmsclient.jar -DgroupId=it.ader.tipografiavirtuale -DartifactId=spjmsclient -Dversion=1.0.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=opencv-410.jar -DgroupId=org.opencv -DartifactId=opencv -Dversion=4.1.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=AbilitazioniWsClient.jar -DgroupId=it.aer.geube -DartifactId=AbilitazioneWsServiceClient -Dversion=1.0.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=dfc.jar -DgroupId=com.documentum -DartifactId=dfc -Dversion=6.7.2080.0090 -Dpackaging=jar
+
+mvn install:install-file -Dfile=certjFIPS.jar -DgroupId=com.rsa -DartifactId=certjFIPS -Dversion=2.2.0.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=jsafeFIPS.jar -DgroupId=com.rsa -DartifactId=jsafeFIPS -Dversion=3.6 -Dpackaging.jar
+
+mvn install:install-file -Dfile=struts2-arianna.jar -DgroupId=org.softwareforge -DartifactId=struts2-arianna-plugin -Dversion=0.5.1 -Dpackaging=jar
+
+mvn install:install-file -Dfile=andes-client-3.3.0.jar -DgroupId=org.wso2.andes.wso2 -DartifactId=andes-client -Dversion=3.3.0 -Dpackaging=jar
+
+mvn install:install-file -Dfile=AuditLib.1.8.jar -DgroupId=it.ader.tipografiavirtuale.commons.audit -DartifactId=AuditLib -Dversion=1.8 -Dpackaging=jar
+
+mvn deploy:deploy-file -Dfile=AuditLib.1.8.jar -DgroupId=it.ader.tipografiavirtuale.commons.audit -DartifactId=AuditLib -Dversion=1.8 -Dpackaging=jar -DrepositoryId=ader-devops-visualstudio-com-ader-devops-tipografiavirtuale -Durl=https://ader-devops.pkgs.visualstudio.com/_packaging/TipografiaVirtuale/maven/v1 -s C:\Users\f.tropeano\.m2\settings.xml
+
+mvn deploy:deploy-file -Dfile=ader-release-2.0.2.1.jar -DgroupId=it.aer.bup.classifier -DartifactId=ader-rep-release -Dversion=2.0.2.2 -Dpackaging=jar -DrepositoryId=Rudolf_Lib -Durl=https://ader-devops.pkgs.visualstudio.com/_packaging/Rudolf_Lib/maven/v1 -s C:\Users\f.tropeano\.m2\ader-settings\rep-settings.xml
